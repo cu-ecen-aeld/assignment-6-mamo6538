@@ -8,7 +8,7 @@ SRC_URI = "git://git@github.com/cu-ecen-aeld/assignments-3-and-later-mamo6538;pr
 
 PV = "1.0+git${SRCPV}"
 # Done: set to reference a specific commit hash in your assignment repo
-SRCREV = "4bd750ad1ddd67760f8092d685270f0c21efddcb"
+SRCREV = "6d7ee174051134bc9ac9da27e5e31dda18d72a93"
 
 inherit update-rc.d
 INITSCRIPT_PACKAGES = "${PN}"
@@ -41,5 +41,5 @@ do_install () {
 	install -d ${D}${bindir}
 	install -d ${D}${sysconfdir}/init.d
 	install -m 0755 ${S}/aesdsocket ${D}${bindir}/
-	install -m 0755 ${S}/aesdsocket-start-stop.sh ${D}${sysconfdir}/init.d/
+	install -m 0755 ${S}/aesdsocket-start-stop ${D}${sysconfdir}/init.d/
 }
