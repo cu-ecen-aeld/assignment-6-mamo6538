@@ -8,7 +8,7 @@ SRC_URI = "git://git@github.com/cu-ecen-aeld/assignments-3-and-later-mamo6538;pr
 
 PV = "1.0+git${SRCPV}"
 # Done: set to reference a specific commit hash in your assignment repo
-SRCREV = "6d7ee174051134bc9ac9da27e5e31dda18d72a93"
+SRCREV = "c3ea41bca3245aa056ca474656f3be7707fc3ddd"
 
 inherit update-rc.d
 INITSCRIPT_PACKAGES = "${PN}"
